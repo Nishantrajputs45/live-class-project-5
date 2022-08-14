@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   background: url(./assets/bg.png) no-repeat;
@@ -24,8 +25,8 @@ body {
   margin-left: 3rem;
 }
 .line {
-  width: 2px;
-  background-color: #ffffffff;
+  width: 1px;
+  background-color: #758283;
   height: 60%;
   float: left;
   margin-left: 6rem;
@@ -39,6 +40,12 @@ body {
   width: 50rem;
   justify-content: space-evenly;
 }
+.list-item1::after {
+  content: "^";
+  display: inline-block;
+  transform: rotate(180deg);
+  margin-left: 0.4rem;
+}
 .button-small {
   position: absolute;
   right: 3rem;
@@ -51,7 +58,7 @@ body {
   border-radius: 5px;
 }
 .hero {
-  height: 100vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
